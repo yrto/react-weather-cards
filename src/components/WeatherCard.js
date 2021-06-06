@@ -21,7 +21,9 @@ const WeatherCard = ({ city }) => {
         <li
           key={city}
           className={`bg-white rounded-md shadow-sm flex flex-col justify-between hover:cursor-pointer hover:shadow-md transition select-none ${
-            highlight ? "opacity-100 shadow-md" : "opacity-50"
+            highlight
+              ? "opacity-100 shadow-md transform rotate-1 scale-105"
+              : "opacity-75"
           }`}
           onClick={() => setHighlight(!highlight)}
         >
