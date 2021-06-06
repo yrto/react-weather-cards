@@ -7,7 +7,7 @@ const generateWeatherApiUrl = (city) =>
   `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&lang=pt_br&units=metric`;
 
 const generateAirPollutionApiUrl = (lat, lon) =>
-  `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`;
+  `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
 const fetchRawWeatherData = async (city) => {
   const response = await fetch(generateWeatherApiUrl(city));
